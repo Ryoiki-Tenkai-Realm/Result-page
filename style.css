@@ -1,0 +1,239 @@
+:root {
+    --text-fill-color: rgba(176, 176, 248, 0.841) ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: #e2ebff;
+}
+
+.main, .container, .section1, .sub-section2, .marks-container, .marks, .gain-marks, .sub-part3, .subject1, .subject2, .subject3, .subject4, .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1, .marks {
+    flex-direction: column;
+}
+
+.container {
+    height: 430px;
+    width: 600px;
+    background-color: #ffff;
+    border-radius: 25px;
+}
+
+.section1 {
+    width:300px;
+    height: 100%;
+    padding: 20px;
+    background-image:linear-gradient(to top ,rgb(50, 45, 235), rgb(104, 68, 255));
+    border-radius: 25px;
+}
+
+.sub-section1 {
+    padding-bottom: 10px;
+    font-family: calibri;
+    color:var(--text-fill-color);
+}
+
+.sub-section2 {
+    padding: 15px 0px;
+}
+
+.marks-container {
+    width: 160px;
+    height: 160px;
+    background-image: linear-gradient(to bottom , #4b24cd, #4734ee);
+    border-radius: 50%;
+}
+
+.marks {
+    width: 60px;
+}
+
+.part1 {
+    font-size: 1.8rem;
+    color: antiquewhite;
+}
+
+.part2 {
+    font-family: calibri;
+    color:  rgba(176, 176, 248, 0.648);
+}
+
+.sub-section3 {
+    padding: 10px 0px;
+    color: antiquewhite;
+    font-family: calibri;
+}
+
+.sub-section4 {
+    padding: 5px 24px;
+    text-align: center;
+    font-family: calibri;
+    font-size: 0.9rem;
+    color:  var(--text-fill-color);
+}
+
+.section2 {
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+}
+
+.sub-part1 {
+    margin-top: 10px;
+    padding-bottom: 15px;
+    color: rgba(1, 1, 56, 0.84);
+    font-family: calibri;
+}
+
+.sub-part2 {
+    margin: 13px 10px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.background1 {
+    background-color:  rgba(255, 0, 0, 0.040);
+}
+
+.background2 {
+    background-color: rgba(248, 199, 93, 0.060);
+}
+
+.background3 {
+    background-color: rgba(1, 179, 250, 0.033);
+}
+
+.background4 {
+    background-color: rgba(0, 0, 255, 0.049);
+}
+
+.icon {
+    width: 30px ;
+    height: 30px;
+    font-size: 1.1rem;
+    padding-right: 10px;
+}
+
+.subject1 {
+    color:  rgba(255, 0, 0, 0.6);
+}
+
+.subject2 {
+    color: rgba(255, 166, 0, 0.7);
+}
+
+.subject3 {
+    color: rgba(1, 179, 250, 0.7);
+}
+
+.subject4 {
+    color: rgba(0, 0, 255, 0.8);
+}
+
+.obtained {
+    color:  rgba(1, 1, 56, 0.84);
+}
+
+.total {
+    color: var(--text-fill-color);
+}
+
+
+.sub-part3 {
+   margin: 30px 15px 0px 15px ; 
+   padding: 10px 30px;
+   color: antiquewhite;
+   background-color: #303b59;
+   border-radius: 30px;
+   cursor: pointer;
+}
+
+.sub-part3:hover {
+    background-image: linear-gradient(to top ,rgb(50, 45, 235), rgb(104, 68, 255));
+}
+
+@media only screen and (min-width:540px) and (max-width:650px) {
+    .container {
+        width: 520px;
+        height: 400px;
+    }
+    
+    .sub-part2 {
+        padding: 8px;
+        margin: 10px;
+    }
+
+    .icon {
+        padding-right: 5px;
+    }
+
+    .sub-section4 {
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (min-width:0rem) and (max-width:35rem) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .section1 {
+        width: 100%;
+        border-radius: 0px 0px 40px 40px;
+    }
+    
+    .sub-section1{
+        padding-top: 70px;
+    }
+
+    .marks-container {
+        width: 140px;
+        height: 140px;
+    }
+
+    .section2 {
+        width: 100%;
+        padding: 20px 35px;
+    }
+
+    .sub-part2 {
+        margin: 15px 10px;
+        padding: 15px 10px;
+        font-size: 1.2rem;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        padding-right: 20px;
+    }
+
+    .sub-part3 {
+        font-size: 1.4rem;
+        margin: 40px 0px;
+    }
+}
+
+
+
+
+
